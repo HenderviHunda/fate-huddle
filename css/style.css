@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&family=Lexend+Deca&family=Roboto:ital,wght@0,300;0,400;1,100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: hsl(257, 40%, 49%);
+}
+
+.contenedor{
+    background: url(..//img/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.caja{
+    margin: 3rem;
+}
+
+.icon{
+    text-align: left;
+    margin-bottom: 5rem;
+    color: white;
+}
+
+.box-one{
+    display: flex;
+    width: 100%;
+    margin-right: 20px;
+}
+
+.box-two{
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.text h1{
+    padding: 20px;
+}
+
+.text p{
+    padding: 20px;
+}
+
+.button{
+    background: white;
+    color: hsl(257, 40%, 49%);
+    margin: 5px 15rem 10px 20px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.548);
+}
+
+.button:hover{
+    cursor: pointer;
+    background: hsl(257, 40%, 49%);
+    color: white;
+    border: 2px solid white;
+    transition: ease-in;
+    transition-duration: 0.2s;
+}
+
+.icon-two{
+    font-size: 1rem;
+    text-align: right;
+    padding: 15px;
+    color: white;
+}
+
+.icon-two i{
+    border: 2.5px solid white;
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 50px; 
+}
+
+.icon-two i:hover{
+    cursor: pointer;
+    background: hsl(0, 0%, 100%);
+    color: hsl(257, 40%, 49%);
+    border: 2px solid hsl(257, 40%, 49%);
+    transition: ease-in;
+    transition-duration: 0.2s;
+}
+
+@media (max-width: 400px) {
+    .contenedor{
+        background: url(..//img/bg-mobile.svg);
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .caja{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+        margin-top: 0%;
+        width: 100%;     
+    }
+
+    .icon h1{
+        text-align: left;
+        width: 100vw;
+        margin-left: 20px;
+    }
+
+    .image-two{
+        margin: 5px 20px;
+        
+    }
+
+    .image-two img{
+        width: 100%;
+    }
+
+
+    .box-one{
+        flex-direction: column;
+    }
+
+    .text p{
+        text-align: center; 
+    }
+
+    .button{
+        width: 70vw;
+        margin: 5px 44px;
+    }
+}
+
+
